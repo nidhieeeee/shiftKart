@@ -11,20 +11,18 @@ const [productData , setProductData] = useState([]);
 
   useEffect(
     ()=>{
-      console.log("Product Data :"+ productData );
+      console.log("Product Data :", productData );
     }, [productData]
   )
   return (
     <div className='main'>
        <Router>
       <Navbar />
-     
         <Routes>
           <Route path="/" element={<Landingpage setProductData={setProductData} />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/cart" element={<Cart data={productData} />} />
-          <Route path='/home' element={<Landingpage />} />
         </Routes>
       </Router>
     </div>

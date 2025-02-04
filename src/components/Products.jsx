@@ -17,7 +17,7 @@ function Products({ category, setProductData }) {
 
     function handleAddToCart(item) {
         setProductData((prevCart) => {
-            const existingProduct = prevCart.find((prod)=> prod.id== item.id);
+            const existingProduct = prevCart.find((prod)=> prod.id === item.id);
             if(existingProduct){
 
                 console.log("existing product")

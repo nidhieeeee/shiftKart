@@ -9,6 +9,7 @@
     text-align: center;
     gap: 30px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 .products-img{
     padding: 20px;
@@ -41,4 +42,22 @@
 .add-to-cart{
     padding: 5px 20px;
     margin-top: 10px;
+}
+@media (max-width:768px) {
+ .products-container{
+    padding: 0;
+ }
+.products-img img{
+    width: 100px;
+    height: 100px;
+}
+.products-img{
+    padding: 0;
+}
+.products-main h1{
+    font-size: 1.1rem;
+}
+.products{
+    font-size: 0.8rem;
+}
 }
